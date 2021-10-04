@@ -11,7 +11,9 @@ import Footer from './components/Footer/Footer';
 import NotFound from "./components/NotFound/NotFound";
 import Header from './components/Header/Header';
 import Courses from './components/Courses/Courses';
-import {useState, useEffect } from 'react';
+import {useState, useEffect, createContext } from 'react';
+
+const CourseContext = createContext('course')
 
 function App() {
   const [courses, setCourses] = useState([]);
@@ -37,9 +39,11 @@ function App() {
               <About></About>
             </Route>
             <Route path="/courses">
+              <CourseContext.Provider value={courses}>
               <Courses
               courses={courses}
               ></Courses>
+              </CourseContext.Provider>
             </Route>
             <Route path="/admission">
               <Admission></Admission>

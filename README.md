@@ -1,4 +1,4 @@
-# Star-Universuty-website
+# Star-University-website
 
 Live-demo[Click here]().
 
