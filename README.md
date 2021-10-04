@@ -3,9 +3,9 @@
 Live-demo[Click here]().
 
 ## About this app
-1 A simple react university website
-2 A beatiful landing page
-3 Imlimented react-router to navigate without page reload
+1. A simple react university website\
+2. A beatiful landing page\
+3. Imlimented react-router to navigate without page reload
 
 ## Available Scripts
 
