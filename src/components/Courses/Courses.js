@@ -1,5 +1,6 @@
 import React from 'react';
 import { useContext } from 'react';
+import { CourseContext } from '../../App';
 import Course from '../Course/Course';
 
 const Courses = (props) => {

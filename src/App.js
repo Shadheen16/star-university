@@ -13,7 +13,7 @@ import Header from './components/Header/Header';
 import Courses from './components/Courses/Courses';
 import {useState, useEffect, createContext } from 'react';
 
-const CourseContext = createContext('course')
+export const CourseContext = createContext('course');
 
 function App() {
   const [courses, setCourses] = useState([]);
