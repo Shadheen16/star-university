@@ -1,7 +1,12 @@
 .App {
-  text-align: center;
+  overflow-x: hidden;
 }
 
+.logo {
+  font-weight: bold;
+  text-align: center;
+
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;

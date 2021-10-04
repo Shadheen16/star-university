@@ -1,0 +1,15 @@
+.footer{
+    background:black;
+    color: white;
+    margin-bottom: 0;
+    text-align: left;
+}
+
+.footer-box h5 {
+    border-bottom: 3px red solid;
+    padding: 10px 0 10px 0
+}
+
+.footer-box:first-of-type{
+    border-bottom: 3px red solid;
+}

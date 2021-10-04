@@ -1,6 +1,11 @@
-# Getting Started with Create React App
+# Star-Universuty-website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Live-demo[Click here]().
+
+## About this app
+1 A simple react university website
+2 A beatiful landing page
+3 Imlimented react-router to navigate without page reload
 
 ## Available Scripts
 

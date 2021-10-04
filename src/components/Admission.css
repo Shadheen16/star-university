@@ -1,0 +1,17 @@
+.admission-banner {
+    background-image: url("https://www.gilbaneco.com/wp-content/uploads/DSC_0418.jpg");
+    background-attachment: fixed;
+    min-height: 100vh;
+    text-align: left;
+}
+
+.transparent-bg{
+    background-image: url("https://www.gilbaneco.com/wp-content/uploads/DSC_0418.jpg");
+    background-size:cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.068);
+    background-blend-mode: multiply;
+    min-height: 50vh;
+    background-attachment: fixed;
+}

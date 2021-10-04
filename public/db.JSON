@@ -1,0 +1,83 @@
+[
+    {
+        "img":"https://www.mheducation.com/cover-images/Jpeg_400-high/1260814432.jpeg",
+        "title": "Introduction to Managerial Accounting",
+        "department": "Business Adminstration",
+        "campus": "KU2 Hill",
+        "level": "Undergraduate",
+        "instructor": "Carol Dawson (PhD)",
+        "semester": "Fall 2021",
+        "credit": "4.000"
+    },
+    {
+        "img":"https://media.wiley.com/product_data/coverImage300/99/11188006/1118800699.jpg",
+        "title": "Intermediate Accounting I",
+        "department": "Business Adminstration",
+        "campus": "KU2 Hill",
+        "level": "Graduate",
+        "instructor": "John Hagensy (PhD)",
+        "semester": "Fall 2021",
+        "credit": "3.000"
+    },
+    {
+        "img":"https://www.pbookshop.com/media/catalog/product/cache/1/image/265x/9df78eab33525d08d6e5fb8d27136e95/i/m/image_9684.jpg",
+        "title": "Contemporary Accounting Topics",
+        "department": "Business Adminstration",
+        "campus": "KU2 Hill",
+        "level": "Graduate",
+        "instructor": "John Hagensy (PhD)",
+        "semester": "Fall 2021",
+        "credit": "3.000"
+    },
+    {
+        "img":"https://www.yourcolumnist.in/wp-content/uploads/2017/09/taxes-1015399_960_720.jpg",
+        "title": "Introduction to Taxation",
+        "department" : "Business Adminstration",
+        "campus" : "Adman's Hall",
+        "level" : "Undergraduate",
+        "instructor ": "Bruce Willis (PhD)",
+        "semester ": "Spring 2022",
+        "credit" : "3.000"
+    },
+    {
+        "img":"https://www.investopedia.com/thmb/d9auv3_zBUewujmQ25flcKugGJg=/1500x844/smart/filters:no_upscale()/GettyImages-936538294-c7bc85f4feda496b97d7c52b2d6f799d.jpg",
+        "title": "Accounting Systems and Auditing",
+        "department" : "Business Adminstration",
+        "campus" : "Adman's Hall",
+        "level" : "Graduate",
+        "instructor ": "Angelina Jones (PhD)",
+        "semester ": "Spring 2022",
+        "credit" : "4.000"
+    },
+    {
+        "img":"https://image.slidesharecdn.com/bpen-150206102606-conversion-gate01/95/alignia-for-business-processes-1-638.jpg?cb=1423218580",
+        "title": "Business Processes and Controls",
+        "department" : "Business Adminstration",
+        "campus" : "Adman's Hall",
+        "level" : "Undergraduate",
+        "instructor ": "Bruce Willis (PhD)",
+        "semester ": "Spring 2022",
+        "credit" : "2.000"
+    },
+    {
+        "img":"https://www.investopedia.com/thmb/dCcj4NBqdJlxd6ypDheAu8ODOso=/1200x675/smart/filters:no_upscale()/cost-accounting-0dae1cc4dd244312acc871e8895f6402.jpg",
+        "title": "Cost Accounting",
+        "department" : "Business Adminstration",
+        "campus" : "Kingster's 80",
+        "level" : "Graduate",
+        "instructor ": "Carol Dawson (PhD)",
+        "semester ": "Fall 2021",
+        "credit" : "3.000"
+    },
+    {
+        "img":"https://images-na.ssl-images-amazon.com/images/I/81Ta+SFEWaL.jpg",
+        "title": "Advanced Cost Accounting and Management",
+        "department" : "KU2 Hill",
+        "campus" : "Kingster's 80",
+        "level" : "Undergraduate",
+        "instructor ": "Carol Dawson (PhD)",
+        "semester ": "Fall 2021",
+        "credit" : "2.000"
+    
+    }
+]
