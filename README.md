@@ -1,6 +1,6 @@
 # Star-University-website
 
-Live-demo[Click here]().
+Live-demo[Click here](https://vigorous-bhaskara-44baa5.netlify.app/).
 
 ## About this app
 1. A simple react university website.\
