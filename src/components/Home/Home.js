@@ -5,7 +5,7 @@ import { useHistory } from "react-router-dom";
 import Course from '../Course/Course';
 
 
-const Home = (props) => {
+const Home = () => {
     const courses = useContext(CourseContext);
     const courseArray = Object.entries(courses);
     const slicedCourses = Object.values(Object.fromEntries(courseArray.slice(0, 3)));
