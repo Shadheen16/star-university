@@ -10,7 +10,7 @@ const About = () => {
                 </h4>
                 About Us
             </h1>
-            <div class="d-md-flex p-5">
+            <div className="d-md-flex p-5">
                 <h3 ClassName="fw-bold">Star's History</h3>
                 <p className="w-50 ms-auto">If you would like to study in the university in the heart of the city that focus on chaning the world for better to morrow, you’re choosin the right place. We do not use special formulas to select students. We look at every single applicant’s application, academic and personal, to select students who suit to our community with a full range of backgrounds. If you would like to study
 

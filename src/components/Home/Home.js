@@ -1,23 +1,22 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './Home.css'
 import { Accordion, Button, Carousel } from 'react-bootstrap';
 import { useHistory } from "react-router-dom";
 import Course from '../Course/Course';
+import { CourseContext } from '../../App';
 
 
-const Home = (props) => {
-    const courses = props.courses;
+const Home = () => {
+    const courses = useContext(CourseContext);
     const courseArray = Object.entries(courses);
-    const slicedCourses = courseArray.slice(0, 3);
-    console.log(slicedCourses);
-    const fewCourses = Object.fromEntries(slicedCourses);
-    console.log(fewCourses);
+    const slicedCourses = Object.values(Object.fromEntries(courseArray.slice(0, 3)));
 
     let history = useHistory();
-    function goToAdmission() {
+
+    const goToAdmission = () => {
         history.push("/admission");
     }
-    function goToCourses() {
+    const goToCourses = () => {
         history.push("/courses")
     }
     return (
@@ -49,40 +48,44 @@ const Home = (props) => {
                     </Carousel.Item>
                 </Carousel>
             </div>
-            <div className=" p-5">
+            <div className="p-5">
                 <h2 className="my-3 fw-bold"> AVAILABLE COURSES </h2>
                 <div className="row pt-3">
                     {
-                        courses.map(course => <Course
+                        slicedCourses.map(course => <Course
                             buttonVariant="light"
-                            key="course.title"
+                            key="course.id"
                             course={course}
                         ></Course>)
                     }
 
                 </div>
-                <Button variant="danger" onClick={goToCourses}>More Courses</Button>
-            </div>
-            <div className="p-5">
-            <div className="d-md-flex">
-                <div className="p-3">
-                    <img className="img-fluid" src="https://admissions-office.net/images/site/top_v1.jpg" alt="" />
+                <div className="w-100 d-flex mt-5">
+                    <Button variant="danger" className="mx-auto px-5" onClick={goToCourses}>Show More</Button>
                 </div>
-                <div>
-                  <div>
-                  <h3 className="fw-bold mt-auto pt-3">
-                        APPLY FOR ADMISSION
-                    </h3>
-                    <p className="text-danger">Fall 2021 applications are now open</p>
-                    <br />
-                    <p>
-                        We don’t just give students an education and experiences that set them up for success in a career. We help them succeed in their career—to discover a field they’re passionate about and dare to lead it.
-                    </p>
-                  </div>
 
-                    <Button variant="danger" onClick={goToAdmission} >Appy Now</Button>
-                </div>
             </div>
+            <div className="p-5 text-center">
+                <div className="d-md-flex">
+                    <div className="p-3">
+                        <img className="img-fluid" src="https://admissions-office.net/images/site/top_v1.jpg" alt="" />
+                    </div>
+                    <div>
+                        <div>
+                            <h3 className="fw-bold mt-auto pt-3">
+                                APPLY FOR ADMISSION
+                            </h3>
+                            <p className="text-danger">Fall 2021 applications are now open</p>
+                            <br />
+                            <p>
+                                We don’t just give students an education and experiences that set them up for success in a career. We help them succeed in their career—to discover a field they’re passionate about and dare to lead it.
+                            </p>
+                        </div>
+                        <div className="w-100 d-flex">
+                            <Button variant="danger" className="mx-auto" onClick={goToAdmission} >Appy Now</Button>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div className="p-5">
                 <h1>

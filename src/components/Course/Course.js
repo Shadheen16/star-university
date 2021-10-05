@@ -13,13 +13,13 @@ const Course = (props) => {
             <Card style={{ width: '18rem' }} className="card">
                 <Card.Img variant="top" src={img}/>
                 <Card.Body>
-                    <Card.Title><span className="fw-bold me-1">Course title:</span>{title}</Card.Title>
-                    <small>Instructor: {instructor}</small> 
+                    <Card.Title><span className=" me-1">Course title:</span>{title}</Card.Title>
+                    <small className="text-danger">Instructor: {instructor}</small> 
                 </Card.Body>
                 <ListGroup className="list-group-flush">
-                    <ListGroupItem><strong> Fuculty: </strong>{department}</ListGroupItem>
-                    <ListGroupItem> <strong>Campus: </strong>{campus}</ListGroupItem>
-                    <ListGroupItem><strong>Credit: </strong>{credit}</ListGroupItem>
+                    <ListGroupItem> Fuculty: {department}</ListGroupItem>
+                    <ListGroupItem> Campus: {campus}</ListGroupItem>
+                    <ListGroupItem>Credit: {credit}</ListGroupItem>
                 </ListGroup>
 
                 <Button variant={variant}>{buttonText}</Button>
