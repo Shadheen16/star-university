@@ -6,12 +6,9 @@ import Course from '../Course/Course';
 
 
 const Home = (props) => {
-    const courses = props.courses;
+    const courses = useContext(CourseContext);
     const courseArray = Object.entries(courses);
-    const slicedCourses = courseArray.slice(0, 3);
-    console.log(slicedCourses);
-    const fewCourses = Object.fromEntries(slicedCourses);
-    console.log(fewCourses);
+    const slicedCourses = Object.values(Object.fromEntries(courseArray.slice(0, 3)));
 
     let history = useHistory();
     function goToAdmission() {
@@ -53,7 +50,7 @@ const Home = (props) => {
                 <h2 className="my-3 fw-bold"> AVAILABLE COURSES </h2>
                 <div className="row pt-3">
                     {
-                        courses.map(course => <Course
+                        slicedCourses.map(course => <Course
                             buttonVariant="light"
                             key="course.title"
                             course={course}
