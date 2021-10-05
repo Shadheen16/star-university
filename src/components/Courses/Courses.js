@@ -14,6 +14,7 @@ const Courses = (props) => {
             <div className="row p-5 pt-5">
                 {
                     courses.map(course => <Course
+                        buttonVariant="danger"
                         buttonText="Show Detail"
                         key={course.title}
                         course={course}

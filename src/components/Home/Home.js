@@ -50,10 +50,11 @@ const Home = (props) => {
                 </Carousel>
             </div>
             <div className=" p-5">
-                <h2 className="my-3">Available Courses</h2>
-                <div className="row">
+                <h2 className="my-3 fw-bold"> AVAILABLE COURSES </h2>
+                <div className="row pt-3">
                     {
                         courses.map(course => <Course
+                            buttonVariant="light"
                             key="course.title"
                             course={course}
                         ></Course>)
@@ -62,22 +63,26 @@ const Home = (props) => {
                 </div>
                 <Button variant="danger" onClick={goToCourses}>More Courses</Button>
             </div>
-            <div className="p-5 d-md-flex">
+            <div className="p-5">
+            <div className="d-md-flex">
                 <div className="p-3">
-                    <img className="img-fluid" src="https://cache.careers360.mobi/media/article_images/2021/6/8/admission-featured-image.jpg" alt="" />
+                    <img className="img-fluid" src="https://admissions-office.net/images/site/top_v1.jpg" alt="" />
                 </div>
                 <div>
-                    <h3 className="fw-bold">
-                        Apply for Admission
+                  <div>
+                  <h3 className="fw-bold mt-auto pt-3">
+                        APPLY FOR ADMISSION
                     </h3>
-                    <p className="text-danger fw-bold">Fall 2021 applications are now open</p>
+                    <p className="text-danger">Fall 2021 applications are now open</p>
                     <br />
                     <p>
                         We don’t just give students an education and experiences that set them up for success in a career. We help them succeed in their career—to discover a field they’re passionate about and dare to lead it.
                     </p>
+                  </div>
 
                     <Button variant="danger" onClick={goToAdmission} >Appy Now</Button>
                 </div>
+            </div>
             </div>
             <div className="p-5">
                 <h1>

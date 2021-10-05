@@ -3,10 +3,11 @@ import "./Course.css"
 import { Button, Card, ListGroup, ListGroupItem } from 'react-bootstrap';
 
 const Course = (props) => {
-    console.log(props)
     const {img, title, department, campus, credit, instructor } = props.course;
 
     const buttonText = props.buttonText;
+    const variant = props.buttonVariant;
+
     return (
         <div className="col col-lg-4 mb-4">
             <Card style={{ width: '18rem' }} className="card">
@@ -21,7 +22,7 @@ const Course = (props) => {
                     <ListGroupItem><strong>Credit: </strong>{credit}</ListGroupItem>
                 </ListGroup>
 
-                <Button variant="danger">{buttonText}</Button>
+                <Button variant={variant}>{buttonText}</Button>
             </Card>
 
         </div>

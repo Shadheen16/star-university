@@ -5,3 +5,27 @@
 .nav-bar{
     z-index: 100;
 }
+.nav-link{
+    position:relative;
+}
+.nav-link::after{
+    content:'';
+    height: 3px;
+    background-color:red;
+    width:0;
+    position:absolute;
+    bottom:0;
+    left:50%;
+    transform:translateX(-50%);
+    transition: width 300ms;
+}
+.nav-link:hover::after{
+    width:50%
+}
+.link:active::after{
+    width:50%
+}
+
+.nav-link:last-of-type img{
+    width:32px;
+}
